@@ -3,102 +3,6 @@ Microsoft Windows [版本 10.0.26100.2454]
 
 (QMR_CV) C:\Users\Administrator\Desktop\CV>cd lab1
 
-(QMR_CV) C:\Users\Administrator\Desktop\CV\lab1>python lab.py
-timer 1s
-start
-IF GPU READY: True
-cuda
-Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\CV\lab1\lab.py", line 61, in <module>
-    inputs, labels = inputs.to(device), labels.to(device)
-                                        ^^^^^^^^^
-AttributeError: 'numpy.ndarray' object has no attribute 'to'
-
-(QMR_CV) C:\Users\Administrator\Desktop\CV\lab1>python lab.py
-timer 1s
-start
-IF GPU READY: True
-cuda
-C:\Users\Administrator\Desktop\CV\lab1\lab.py:61: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs, labels = torch.tensor(inputs).to(device), torch.tensor(labels).to(device)
-Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\CV\lab1\lab.py", line 65, in <module>
-    loss = criterion(outputs, labels)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\modules\loss.py", line 1293, in forward
-    return F.cross_entropy(
-           ^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\functional.py", line 3479, in cross_entropy
-    return torch._C._nn.cross_entropy_loss(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Expected input batch_size (4) to match target batch_size (3999).
-
-(QMR_CV) C:\Users\Administrator\Desktop\CV\lab1>python lab.py
-timer 1s
-start
-IF GPU READY: True
-cuda
-Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\CV\lab1\lab.py", line 61, in <module>
-    inputs, labels = inputs.to(device), labels.to(device)
-                                        ^^^^^^^^^
-AttributeError: 'numpy.ndarray' object has no attribute 'to'
-
-(QMR_CV) C:\Users\Administrator\Desktop\CV\lab1>python lab.py
-timer 1s
-start
-IF GPU READY: True
-cuda
-C:\Users\Administrator\Desktop\CV\lab1\lab.py:61: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs, labels = torch.tensor(inputs).to(device), torch.tensor(labels).to(device)
-Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\CV\lab1\lab.py", line 65, in <module>
-    loss = criterion(outputs, labels)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\modules\loss.py", line 1293, in forward
-    return F.cross_entropy(
-           ^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\functional.py", line 3479, in cross_entropy
-    return torch._C._nn.cross_entropy_loss(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Expected input batch_size (3599) to match target batch_size (3999).
-
-(QMR_CV) C:\Users\Administrator\Desktop\CV\lab1>python lab.py
-timer 1s
-start
-IF GPU READY: True
-cuda
-C:\Users\Administrator\Desktop\CV\lab1\lab.py:61: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs, labels = torch.tensor(inputs).to(device), torch.tensor(labels).to(device)
-Traceback (most recent call last):
-  File "C:\Users\Administrator\Desktop\CV\lab1\lab.py", line 65, in <module>
-    loss = criterion(outputs, labels)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\modules\loss.py", line 1293, in forward
-    return F.cross_entropy(
-           ^^^^^^^^^^^^^^^^
-  File "C:\ProgramData\anaconda3\envs\QMR_CV\Lib\site-packages\torch\nn\functional.py", line 3479, in cross_entropy
-    return torch._C._nn.cross_entropy_loss(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Expected input batch_size (3599) to match target batch_size (3999).
 
 (QMR_CV) C:\Users\Administrator\Desktop\CV\lab1>python lab.py
 timer 1s
@@ -620,3 +524,712 @@ Epoch [38/40], Loss: 0.03647827357053757
 Epoch [39/40], Loss: 0.02611800841987133
 Epoch [40/40], Loss: 0.0005605685873888433
 Accuracy of the model on the test set: 98.25%
+
+
+Microsoft Windows [版本 10.0.19045.4957]
+(c) Microsoft Corporation。保留所有权利。
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+timer 5s
+True
+start
+Epoch [10/100], Loss: 1.0775188207626343
+Epoch [20/100], Loss: 1.0198582410812378
+Epoch [30/100], Loss: 0.9785978198051453
+Epoch [40/100], Loss: 0.940784215927124 
+Epoch [50/100], Loss: 0.9048259854316711
+Epoch [60/100], Loss: 0.8703478574752808
+Epoch [70/100], Loss: 0.8372302651405334
+Epoch [80/100], Loss: 0.8055086731910706
+Epoch [90/100], Loss: 0.7753512263298035
+Epoch [100/100], Loss: 0.7467939853668213
+Accuracy of the model on the test set: 73.33333333333333%
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+timer 5s
+True
+start
+Epoch [10/500], Loss: 0.9952073693275452
+Epoch [20/500], Loss: 0.9552009105682373
+Epoch [30/500], Loss: 0.9172471165657043
+Epoch [40/500], Loss: 0.8776795864105225
+Epoch [50/500], Loss: 0.8393732905387878
+Epoch [60/500], Loss: 0.8076473474502563
+Epoch [70/500], Loss: 0.7775803208351135
+Epoch [80/500], Loss: 0.7483299970626831
+Epoch [90/500], Loss: 0.7203820943832397
+Epoch [100/500], Loss: 0.694040834903717
+Epoch [110/500], Loss: 0.6697395443916321
+Epoch [120/500], Loss: 0.6477349996566772
+Epoch [130/500], Loss: 0.6274657845497131
+Epoch [140/500], Loss: 0.608512282371521
+Epoch [150/500], Loss: 0.5908138751983643
+Epoch [160/500], Loss: 0.5743315815925598
+Epoch [170/500], Loss: 0.559145987033844
+Epoch [180/500], Loss: 0.5450966358184814
+Epoch [190/500], Loss: 0.5319651961326599
+Epoch [200/500], Loss: 0.5197835564613342
+Epoch [210/500], Loss: 0.5083927512168884
+Epoch [220/500], Loss: 0.49772199988365173
+Epoch [230/500], Loss: 0.4876689612865448
+Epoch [240/500], Loss: 0.4781962037086487
+Epoch [250/500], Loss: 0.46924394369125366
+Epoch [260/500], Loss: 0.4607383608818054
+Epoch [270/500], Loss: 0.45263543725013733
+Epoch [280/500], Loss: 0.44487932324409485
+Epoch [290/500], Loss: 0.43745434284210205
+Epoch [300/500], Loss: 0.4303257167339325
+Epoch [310/500], Loss: 0.42346206307411194
+Epoch [320/500], Loss: 0.41684019565582275
+Epoch [330/500], Loss: 0.4104464650154114
+Epoch [340/500], Loss: 0.4042549729347229
+Epoch [350/500], Loss: 0.39825204014778137
+Epoch [360/500], Loss: 0.3924231231212616
+Epoch [370/500], Loss: 0.3867553770542145
+Epoch [380/500], Loss: 0.38123512268066406
+Epoch [390/500], Loss: 0.3758520185947418
+Epoch [400/500], Loss: 0.3705946207046509
+Epoch [410/500], Loss: 0.36545705795288086
+Epoch [420/500], Loss: 0.36042943596839905
+Epoch [430/500], Loss: 0.3555046319961548
+Epoch [440/500], Loss: 0.3506809175014496
+Epoch [450/500], Loss: 0.34595391154289246
+Epoch [460/500], Loss: 0.34132179617881775
+Epoch [470/500], Loss: 0.336782306432724
+Epoch [480/500], Loss: 0.3323290944099426
+Epoch [490/500], Loss: 0.3279631733894348
+Epoch [500/500], Loss: 0.3236788511276245
+Accuracy of the model on the test set: 100.0%
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+timer 5s
+True
+start
+Epoch [10/500], Loss: 0.9914829134941101
+Epoch [20/500], Loss: 0.7175624966621399 
+Epoch [30/500], Loss: 0.5416432023048401 
+Epoch [40/500], Loss: 0.44182807207107544
+Epoch [50/500], Loss: 0.3729058504104614 
+Epoch [60/500], Loss: 0.31072142720222473
+Epoch [70/500], Loss: 0.25461503863334656
+Epoch [80/500], Loss: 0.20773328840732574 
+Epoch [90/500], Loss: 0.17133553326129913 
+Epoch [100/500], Loss: 0.14437882602214813
+Epoch [110/500], Loss: 0.12482898682355881
+Epoch [120/500], Loss: 0.11068034917116165
+Epoch [130/500], Loss: 0.10029398649930954
+Epoch [140/500], Loss: 0.09250326454639435
+Epoch [150/500], Loss: 0.08650895953178406
+Epoch [160/500], Loss: 0.08178768306970596
+Epoch [170/500], Loss: 0.0780133455991745 
+Epoch [180/500], Loss: 0.07493262737989426
+Epoch [190/500], Loss: 0.07238556444644928
+Epoch [200/500], Loss: 0.07025011628866196
+Epoch [210/500], Loss: 0.06843945384025574
+Epoch [220/500], Loss: 0.06688587367534637
+Epoch [230/500], Loss: 0.06554143875837326
+Epoch [240/500], Loss: 0.0643678605556488
+Epoch [250/500], Loss: 0.06333579868078232
+Epoch [260/500], Loss: 0.06242256239056587
+Epoch [270/500], Loss: 0.061608873307704926
+Epoch [280/500], Loss: 0.06087930127978325
+Epoch [290/500], Loss: 0.06022115796804428
+Epoch [300/500], Loss: 0.05962417647242546
+Epoch [310/500], Loss: 0.0590803287923336
+Epoch [320/500], Loss: 0.058582425117492676
+Epoch [330/500], Loss: 0.05812462419271469
+Epoch [340/500], Loss: 0.05770183727145195
+Epoch [350/500], Loss: 0.05730974301695824
+Epoch [360/500], Loss: 0.056944798678159714
+Epoch [370/500], Loss: 0.05660385638475418
+Epoch [380/500], Loss: 0.056284163147211075
+Epoch [390/500], Loss: 0.05598337575793266
+Epoch [400/500], Loss: 0.05569960176944733
+Epoch [410/500], Loss: 0.0554310567677021
+Epoch [420/500], Loss: 0.05517604574561119
+Epoch [430/500], Loss: 0.05493338778614998
+Epoch [440/500], Loss: 0.05470191314816475
+Epoch [450/500], Loss: 0.05448050796985626
+Epoch [460/500], Loss: 0.054268285632133484
+Epoch [470/500], Loss: 0.05406449735164642
+Epoch [480/500], Loss: 0.053868409246206284
+Epoch [490/500], Loss: 0.05367942154407501
+Epoch [500/500], Loss: 0.05349693074822426
+Accuracy of the model on the test set: 100.0%
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+timer 5s
+True
+start
+Epoch [10/500], Loss: 0.39503586292266846
+Epoch [20/500], Loss: 0.2497820258140564
+Epoch [30/500], Loss: 0.16009339690208435
+Epoch [40/500], Loss: 0.11280631273984909
+Epoch [50/500], Loss: 0.09077070653438568
+Epoch [60/500], Loss: 0.07888307422399521
+Epoch [70/500], Loss: 0.07219497114419937
+Epoch [80/500], Loss: 0.06793829798698425
+Epoch [90/500], Loss: 0.06499739736318588
+Epoch [100/500], Loss: 0.06284227967262268
+Epoch [110/500], Loss: 0.06118529662489891
+Epoch [120/500], Loss: 0.05986495688557625
+Epoch [130/500], Loss: 0.05877350643277168
+Epoch [140/500], Loss: 0.057857025414705276
+Epoch [150/500], Loss: 0.05707240104675293
+Epoch [160/500], Loss: 0.05637575313448906
+Epoch [170/500], Loss: 0.05574914440512657
+Epoch [180/500], Loss: 0.05517822876572609
+Epoch [190/500], Loss: 0.05463403835892677
+Epoch [200/500], Loss: 0.054163046181201935
+Epoch [210/500], Loss: 0.053704507648944855
+Epoch [220/500], Loss: 0.053306497633457184
+Epoch [230/500], Loss: 0.05288754776120186
+Epoch [240/500], Loss: 0.052490487694740295
+Epoch [250/500], Loss: 0.05205685645341873
+Epoch [260/500], Loss: 0.051743511110544205
+Epoch [270/500], Loss: 0.051334403455257416
+Epoch [280/500], Loss: 0.05103510618209839
+Epoch [290/500], Loss: 0.050664130598306656
+Epoch [300/500], Loss: 0.050373367965221405
+Epoch [310/500], Loss: 0.050046827644109726
+Epoch [320/500], Loss: 0.04991217330098152
+Epoch [330/500], Loss: 0.04966503754258156
+Epoch [340/500], Loss: 0.049409616738557816
+Epoch [350/500], Loss: 0.0491955503821373
+Epoch [360/500], Loss: 0.048967890441417694
+Epoch [370/500], Loss: 0.048761289566755295
+Epoch [380/500], Loss: 0.048740167170763016
+Epoch [210/500], Loss: 0.053704507648944855
+Epoch [220/500], Loss: 0.053306497633457184
+Epoch [230/500], Loss: 0.05288754776120186
+Epoch [240/500], Loss: 0.052490487694740295
+Epoch [250/500], Loss: 0.05205685645341873
+Epoch [260/500], Loss: 0.051743511110544205
+Epoch [270/500], Loss: 0.051334403455257416
+Epoch [280/500], Loss: 0.05103510618209839
+Epoch [290/500], Loss: 0.050664130598306656
+Epoch [300/500], Loss: 0.050373367965221405
+Epoch [310/500], Loss: 0.050046827644109726
+Epoch [320/500], Loss: 0.04991217330098152
+Epoch [330/500], Loss: 0.04966503754258156
+Epoch [340/500], Loss: 0.049409616738557816
+Epoch [350/500], Loss: 0.0491955503821373
+Epoch [360/500], Loss: 0.048967890441417694
+Epoch [370/500], Loss: 0.048761289566755295
+Epoch [380/500], Loss: 0.048740167170763016
+Epoch [230/500], Loss: 0.05288754776120186
+Epoch [240/500], Loss: 0.052490487694740295
+Epoch [250/500], Loss: 0.05205685645341873
+Epoch [260/500], Loss: 0.051743511110544205
+Epoch [270/500], Loss: 0.051334403455257416
+Epoch [280/500], Loss: 0.05103510618209839
+Epoch [290/500], Loss: 0.050664130598306656
+Epoch [300/500], Loss: 0.050373367965221405
+Epoch [310/500], Loss: 0.050046827644109726
+Epoch [320/500], Loss: 0.04991217330098152
+Epoch [330/500], Loss: 0.04966503754258156
+Epoch [340/500], Loss: 0.049409616738557816
+Epoch [350/500], Loss: 0.0491955503821373
+Epoch [360/500], Loss: 0.048967890441417694
+Epoch [370/500], Loss: 0.048761289566755295
+Epoch [380/500], Loss: 0.048740167170763016
+Epoch [270/500], Loss: 0.051334403455257416
+Epoch [280/500], Loss: 0.05103510618209839
+Epoch [290/500], Loss: 0.050664130598306656
+Epoch [300/500], Loss: 0.050373367965221405
+Epoch [310/500], Loss: 0.050046827644109726
+Epoch [320/500], Loss: 0.04991217330098152
+Epoch [330/500], Loss: 0.04966503754258156
+Epoch [340/500], Loss: 0.049409616738557816
+Epoch [350/500], Loss: 0.0491955503821373
+Epoch [360/500], Loss: 0.048967890441417694
+Epoch [370/500], Loss: 0.048761289566755295
+Epoch [380/500], Loss: 0.048740167170763016
+Epoch [290/500], Loss: 0.050664130598306656
+Epoch [300/500], Loss: 0.050373367965221405
+Epoch [310/500], Loss: 0.050046827644109726
+Epoch [320/500], Loss: 0.04991217330098152
+Epoch [330/500], Loss: 0.04966503754258156
+Epoch [340/500], Loss: 0.049409616738557816
+Epoch [350/500], Loss: 0.0491955503821373
+Epoch [360/500], Loss: 0.048967890441417694
+Epoch [370/500], Loss: 0.048761289566755295
+Epoch [380/500], Loss: 0.048740167170763016
+Epoch [320/500], Loss: 0.04991217330098152
+Epoch [330/500], Loss: 0.04966503754258156
+Epoch [340/500], Loss: 0.049409616738557816
+Epoch [350/500], Loss: 0.0491955503821373
+Epoch [360/500], Loss: 0.048967890441417694
+Epoch [370/500], Loss: 0.048761289566755295
+Epoch [380/500], Loss: 0.048740167170763016
+Epoch [330/500], Loss: 0.04966503754258156
+Epoch [340/500], Loss: 0.049409616738557816
+Epoch [350/500], Loss: 0.0491955503821373
+Epoch [360/500], Loss: 0.048967890441417694
+Epoch [370/500], Loss: 0.048761289566755295
+Epoch [380/500], Loss: 0.048740167170763016
+Epoch [340/500], Loss: 0.049409616738557816
+Epoch [350/500], Loss: 0.0491955503821373
+Epoch [360/500], Loss: 0.048967890441417694
+Epoch [370/500], Loss: 0.048761289566755295
+Epoch [380/500], Loss: 0.048740167170763016
+Epoch [390/500], Loss: 0.04866250231862068
+Epoch [400/500], Loss: 0.04825977608561516
+Epoch [350/500], Loss: 0.0491955503821373
+Epoch [360/500], Loss: 0.048967890441417694
+Epoch [370/500], Loss: 0.048761289566755295
+Epoch [380/500], Loss: 0.048740167170763016
+Epoch [390/500], Loss: 0.04866250231862068
+Epoch [400/500], Loss: 0.04825977608561516
+Epoch [370/500], Loss: 0.048761289566755295
+Epoch [380/500], Loss: 0.048740167170763016
+Epoch [390/500], Loss: 0.04866250231862068
+Epoch [400/500], Loss: 0.04825977608561516
+Epoch [390/500], Loss: 0.04866250231862068
+Epoch [400/500], Loss: 0.04825977608561516
+Epoch [410/500], Loss: 0.048167403787374496
+Epoch [410/500], Loss: 0.048167403787374496
+Epoch [420/500], Loss: 0.0479755625128746
+Epoch [420/500], Loss: 0.0479755625128746
+Epoch [430/500], Loss: 0.047827064990997314
+Epoch [430/500], Loss: 0.047827064990997314
+Epoch [440/500], Loss: 0.04762757942080498
+Epoch [440/500], Loss: 0.04762757942080498
+Epoch [450/500], Loss: 0.047392867505550385
+Epoch [450/500], Loss: 0.047392867505550385
+Epoch [460/500], Loss: 0.047544214874506
+Epoch [470/500], Loss: 0.047536030411720276
+Epoch [480/500], Loss: 0.047206539660692215
+Epoch [490/500], Loss: 0.04689197987318039
+Epoch [490/500], Loss: 0.04689197987318039
+Epoch [500/500], Loss: 0.046919457614421844
+Epoch [490/500], Loss: 0.04689197987318039
+Epoch [500/500], Loss: 0.046919457614421844
+Accuracy of the model on the test set: 100.0%
+Epoch [490/500], Loss: 0.04689197987318039
+Epoch [500/500], Loss: 0.046919457614421844
+Accuracy of the model on the test set: 100.0%
+Epoch [490/500], Loss: 0.04689197987318039
+Epoch [500/500], Loss: 0.046919457614421844
+Accuracy of the model on the test set: 100.0%
+Epoch [500/500], Loss: 0.046919457614421844
+Accuracy of the model on the test set: 100.0%
+
+
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+timer 5s
+True
+start
+Epoch [10/500], Loss: 0.40613603591918945
+Epoch [20/500], Loss: 0.2734881043434143
+Epoch [30/500], Loss: 0.17064543068408966
+Epoch [40/500], Loss: 0.12372754514217377
+Epoch [50/500], Loss: 0.10121509432792664
+Epoch [60/500], Loss: 0.0884091928601265
+Epoch [70/500], Loss: 0.08025357872247696
+Epoch [80/500], Loss: 0.0747915729880333
+Epoch [90/500], Loss: 0.07096278667449951
+Epoch [100/500], Loss: 0.06813176721334457
+Epoch [110/500], Loss: 0.06595390290021896
+Epoch [120/500], Loss: 0.06424631178379059
+Epoch [130/500], Loss: 0.06286691874265671
+Epoch [140/500], Loss: 0.061728548258543015
+Epoch [150/500], Loss: 0.06076798960566521
+Epoch [160/500], Loss: 0.05994205176830292
+Epoch [170/500], Loss: 0.05921877175569534
+Epoch [180/500], Loss: 0.05857548862695694
+Epoch [190/500], Loss: 0.05799518898129463
+Epoch [200/500], Loss: 0.057465385645627975
+Epoch [210/500], Loss: 0.056975506246089935
+Epoch [220/500], Loss: 0.05651869997382164
+Epoch [230/500], Loss: 0.05608920007944107
+Epoch [240/500], Loss: 0.05568242818117142
+Epoch [250/500], Loss: 0.0552949383854866
+Epoch [260/500], Loss: 0.05492419749498367
+Epoch [270/500], Loss: 0.05456777662038803
+Epoch [280/500], Loss: 0.05422418564558029
+Epoch [290/500], Loss: 0.053892310708761215
+Epoch [300/500], Loss: 0.05357086658477783
+Epoch [310/500], Loss: 0.05325927585363388
+Epoch [320/500], Loss: 0.052957016974687576
+Epoch [330/500], Loss: 0.05266379565000534
+Epoch [340/500], Loss: 0.05237921327352524
+Epoch [350/500], Loss: 0.05210304260253906
+Epoch [360/500], Loss: 0.05183504894375801
+Epoch [370/500], Loss: 0.05157546326518059
+Epoch [380/500], Loss: 0.051324132829904556
+Epoch [390/500], Loss: 0.051081057637929916
+Epoch [400/500], Loss: 0.050846245139837265
+Epoch [410/500], Loss: 0.05061950907111168
+Epoch [420/500], Loss: 0.05040103942155838
+Epoch [430/500], Loss: 0.05019082874059677
+Epoch [440/500], Loss: 0.049988847225904465
+Epoch [450/500], Loss: 0.04979507252573967
+Epoch [460/500], Loss: 0.04960956051945686
+Epoch [470/500], Loss: 0.04943214729428291
+Epoch [480/500], Loss: 0.049262840300798416
+Epoch [490/500], Loss: 0.049101490527391434
+Epoch [500/500], Loss: 0.048948101699352264
+Accuracy of the model on the test set: 100.0%
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_zj.py
+timer 1s
+start
+IF GPU READY: True
+cuda
+Epoch [1/40], Loss: 0.5588844418525696
+Epoch [2/40], Loss: 0.278902143239975
+Epoch [3/40], Loss: 0.15800787508487701
+Epoch [4/40], Loss: 0.22041693329811096
+Epoch [5/40], Loss: 0.14167048037052155
+Epoch [6/40], Loss: 0.04554285481572151
+Epoch [7/40], Loss: 0.02547261118888855
+Epoch [8/40], Loss: 0.08743282407522202
+Epoch [9/40], Loss: 0.09186577796936035
+Epoch [10/40], Loss: 0.20301704108715057
+Epoch [11/40], Loss: 0.0334421806037426
+Epoch [12/40], Loss: 0.014968009665608406
+Epoch [13/40], Loss: 0.021558301523327827
+Epoch [14/40], Loss: 0.03619084134697914
+Epoch [15/40], Loss: 0.019526749849319458
+Epoch [16/40], Loss: 0.012373151257634163
+Epoch [17/40], Loss: 0.057685546576976776
+Epoch [18/40], Loss: 0.01944851502776146
+Epoch [19/40], Loss: 0.049950700253248215
+Epoch [20/40], Loss: 0.024848749861121178
+Epoch [21/40], Loss: 0.056381531059741974
+Epoch [22/40], Loss: 0.04665735736489296
+Epoch [22/40], Loss: 0.04665735736489296
+Epoch [23/40], Loss: 0.09200024604797363
+Epoch [24/40], Loss: 0.34380486607551575
+Epoch [25/40], Loss: 0.025220928713679314
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [29/40], Loss: 0.03764582797884941
+Epoch [30/40], Loss: 0.005771037191152573
+Epoch [31/40], Loss: 0.07503945380449295
+Epoch [32/40], Loss: 0.010802986100316048
+Epoch [33/40], Loss: 0.035946644842624664
+Epoch [34/40], Loss: 0.2908441722393036
+Epoch [35/40], Loss: 0.005733132362365723
+Epoch [22/40], Loss: 0.04665735736489296
+Epoch [23/40], Loss: 0.09200024604797363
+Epoch [24/40], Loss: 0.34380486607551575
+Epoch [25/40], Loss: 0.025220928713679314
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [29/40], Loss: 0.03764582797884941
+Epoch [30/40], Loss: 0.005771037191152573
+Epoch [31/40], Loss: 0.07503945380449295
+Epoch [32/40], Loss: 0.010802986100316048
+Epoch [33/40], Loss: 0.035946644842624664
+Epoch [34/40], Loss: 0.2908441722393036
+Epoch [22/40], Loss: 0.04665735736489296
+Epoch [23/40], Loss: 0.09200024604797363
+Epoch [24/40], Loss: 0.34380486607551575
+Epoch [25/40], Loss: 0.025220928713679314
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [29/40], Loss: 0.03764582797884941
+Epoch [30/40], Loss: 0.005771037191152573
+Epoch [31/40], Loss: 0.07503945380449295
+Epoch [32/40], Loss: 0.010802986100316048
+Epoch [33/40], Loss: 0.035946644842624664
+Epoch [22/40], Loss: 0.04665735736489296
+Epoch [23/40], Loss: 0.09200024604797363
+Epoch [24/40], Loss: 0.34380486607551575
+Epoch [25/40], Loss: 0.025220928713679314
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [29/40], Loss: 0.03764582797884941
+Epoch [30/40], Loss: 0.005771037191152573
+Epoch [31/40], Loss: 0.07503945380449295
+Epoch [22/40], Loss: 0.04665735736489296
+Epoch [23/40], Loss: 0.09200024604797363
+Epoch [24/40], Loss: 0.34380486607551575
+Epoch [25/40], Loss: 0.025220928713679314
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [29/40], Loss: 0.03764582797884941
+Epoch [22/40], Loss: 0.04665735736489296
+Epoch [23/40], Loss: 0.09200024604797363
+Epoch [24/40], Loss: 0.34380486607551575
+Epoch [25/40], Loss: 0.025220928713679314
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [22/40], Loss: 0.04665735736489296
+Epoch [23/40], Loss: 0.09200024604797363
+Epoch [24/40], Loss: 0.34380486607551575
+Epoch [25/40], Loss: 0.025220928713679314
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [22/40], Loss: 0.04665735736489296
+Epoch [23/40], Loss: 0.09200024604797363
+Epoch [24/40], Loss: 0.34380486607551575
+Epoch [25/40], Loss: 0.025220928713679314
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [22/40], Loss: 0.04665735736489296
+Epoch [23/40], Loss: 0.09200024604797363
+Epoch [24/40], Loss: 0.34380486607551575
+Epoch [25/40], Loss: 0.025220928713679314
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [24/40], Loss: 0.34380486607551575
+Epoch [25/40], Loss: 0.025220928713679314
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [29/40], Loss: 0.03764582797884941
+Epoch [26/40], Loss: 0.012780067510902882
+Epoch [27/40], Loss: 0.01380558218806982
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [29/40], Loss: 0.03764582797884941
+Epoch [28/40], Loss: 0.04143129661679268
+Epoch [29/40], Loss: 0.03764582797884941
+Epoch [30/40], Loss: 0.005771037191152573
+Epoch [31/40], Loss: 0.07503945380449295
+Epoch [30/40], Loss: 0.005771037191152573
+Epoch [31/40], Loss: 0.07503945380449295
+Epoch [31/40], Loss: 0.07503945380449295
+Epoch [32/40], Loss: 0.010802986100316048
+Epoch [32/40], Loss: 0.010802986100316048
+Epoch [33/40], Loss: 0.035946644842624664
+Epoch [34/40], Loss: 0.2908441722393036
+Epoch [35/40], Loss: 0.005733132362365723
+Epoch [36/40], Loss: 0.005205451976507902
+Epoch [37/40], Loss: 0.30138617753982544
+Epoch [38/40], Loss: 0.0226068627089262
+Epoch [39/40], Loss: 0.06481918692588806
+Epoch [40/40], Loss: 0.025820046663284302
+Accuracy of the model on the test set: 99.25%
+
+
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+Epoch [1/50], Loss: 0.6175249814987183
+Epoch [2/50], Loss: 0.28344786167144775
+Epoch [3/50], Loss: 0.20418767631053925
+Epoch [4/50], Loss: 0.05212385207414627
+Epoch [5/50], Loss: 0.11969135701656342
+Epoch [6/50], Loss: 0.2525535225868225
+Epoch [7/50], Loss: 0.06440537422895432
+Epoch [8/50], Loss: 0.2804426848888397
+Epoch [9/50], Loss: 0.02840925008058548
+Epoch [10/50], Loss: 0.09277036786079407
+Epoch [11/50], Loss: 0.024386165663599968
+Epoch [12/50], Loss: 0.05743253976106644
+Epoch [13/50], Loss: 0.18760457634925842
+Epoch [14/50], Loss: 0.023716162890195847
+Epoch [15/50], Loss: 0.05092375725507736
+Epoch [16/50], Loss: 0.040567271411418915
+Epoch [17/50], Loss: 0.028316456824541092
+Epoch [18/50], Loss: 0.01605129800736904
+Epoch [19/50], Loss: 0.007678631227463484
+Epoch [20/50], Loss: 0.0077797845005989075
+Epoch [21/50], Loss: 0.00937514565885067
+Epoch [22/50], Loss: 0.013208938762545586
+Epoch [23/50], Loss: 0.021717485040426254
+Epoch [24/50], Loss: 0.020246807485818863
+Epoch [25/50], Loss: 0.015356731601059437
+Epoch [26/50], Loss: 0.001109429053030908
+Epoch [27/50], Loss: 0.001952865975908935
+Epoch [28/50], Loss: 0.016752146184444427
+Epoch [29/50], Loss: 0.01112927682697773
+Epoch [30/50], Loss: 0.008316252380609512
+Epoch [31/50], Loss: 0.002008001320064068
+Epoch [32/50], Loss: 0.0032218487467616796
+Epoch [31/50], Loss: 0.002008001320064068
+Epoch [32/50], Loss: 0.0032218487467616796
+Epoch [33/50], Loss: 0.047200676053762436
+Epoch [32/50], Loss: 0.0032218487467616796
+Epoch [33/50], Loss: 0.047200676053762436
+Epoch [33/50], Loss: 0.047200676053762436
+Epoch [34/50], Loss: 0.0021305764093995094
+Epoch [34/50], Loss: 0.0021305764093995094
+Epoch [35/50], Loss: 0.1991073489189148
+Epoch [35/50], Loss: 0.1991073489189148
+Epoch [36/50], Loss: 0.008995939046144485
+Epoch [36/50], Loss: 0.008995939046144485
+Epoch [37/50], Loss: 0.0021136021241545677
+Epoch [37/50], Loss: 0.0021136021241545677
+Epoch [38/50], Loss: 0.09691118448972702
+Epoch [38/50], Loss: 0.09691118448972702
+Epoch [39/50], Loss: 0.03249041736125946
+Epoch [39/50], Loss: 0.03249041736125946
+Epoch [40/50], Loss: 0.005988710559904575
+Epoch [40/50], Loss: 0.005988710559904575
+Epoch [41/50], Loss: 0.00011567101319087669
+Epoch [41/50], Loss: 0.00011567101319087669
+Epoch [42/50], Loss: 0.053985558450222015
+Epoch [42/50], Loss: 0.053985558450222015
+Epoch [43/50], Loss: 0.0020404199603945017
+Epoch [43/50], Loss: 0.0020404199603945017
+Epoch [44/50], Loss: 0.06406153738498688
+Epoch [45/50], Loss: 0.022949058562517166
+Epoch [46/50], Loss: 0.0344877764582634
+Epoch [47/50], Loss: 0.0029620961286127567
+Epoch [48/50], Loss: 0.008034047670662403
+Epoch [49/50], Loss: 0.020617812871932983
+Epoch [50/50], Loss: 0.004275118932127953
+Accuracy on the test set: 98.25%
+
+
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+Epoch [1/50], Loss: 1.164469599723816
+Epoch [2/50], Loss: 0.882821798324585
+Epoch [3/50], Loss: 0.7311240434646606
+Epoch [4/50], Loss: 0.47875627875328064
+Epoch [5/50], Loss: 0.4131719470024109
+Epoch [6/50], Loss: 0.34656235575675964
+Epoch [7/50], Loss: 0.22235311567783356
+Epoch [8/50], Loss: 0.2663098871707916
+Epoch [9/50], Loss: 0.1104564443230629
+Epoch [10/50], Loss: 0.0834067314863205
+Epoch [11/50], Loss: 0.18049687147140503
+Epoch [12/50], Loss: 0.07799291610717773
+Epoch [13/50], Loss: 0.07541079819202423
+Epoch [14/50], Loss: 0.1495932936668396
+Epoch [15/50], Loss: 0.07978703081607819
+Epoch [16/50], Loss: 0.03367581591010094
+Epoch [17/50], Loss: 0.16896313428878784
+Epoch [18/50], Loss: 0.04448587819933891
+Epoch [19/50], Loss: 0.2074892818927765
+Epoch [20/50], Loss: 0.168535515666008
+Epoch [21/50], Loss: 0.021987607702612877
+Epoch [22/50], Loss: 0.05562925338745117
+Epoch [23/50], Loss: 0.13920406997203827
+Epoch [24/50], Loss: 0.04989982023835182
+Epoch [25/50], Loss: 0.13263589143753052
+Epoch [26/50], Loss: 0.05373396724462509
+Epoch [27/50], Loss: 0.061677370220422745
+Epoch [28/50], Loss: 0.04570583626627922
+Epoch [29/50], Loss: 0.03979906812310219
+Epoch [30/50], Loss: 0.013671818189322948
+Epoch [31/50], Loss: 0.1315048336982727
+Epoch [32/50], Loss: 0.15564940869808197
+Epoch [33/50], Loss: 0.010624285787343979
+Epoch [34/50], Loss: 0.23594997823238373
+Epoch [35/50], Loss: 0.08528447151184082
+Epoch [36/50], Loss: 0.008340059779584408
+Epoch [37/50], Loss: 0.015166264958679676
+Epoch [38/50], Loss: 0.014766950160264969
+Epoch [39/50], Loss: 0.05420568957924843
+Epoch [40/50], Loss: 0.012584601528942585
+Epoch [41/50], Loss: 0.02595026046037674
+Epoch [42/50], Loss: 0.024933388456702232
+Epoch [43/50], Loss: 0.017879148945212364
+Epoch [44/50], Loss: 0.007350316736847162
+Epoch [44/50], Loss: 0.007350316736847162
+Epoch [45/50], Loss: 0.010187110863626003
+Epoch [44/50], Loss: 0.007350316736847162
+Epoch [45/50], Loss: 0.010187110863626003
+Epoch [45/50], Loss: 0.010187110863626003
+Epoch [46/50], Loss: 0.07060493528842926
+Epoch [46/50], Loss: 0.07060493528842926
+Epoch [47/50], Loss: 0.025322359055280685
+Epoch [47/50], Loss: 0.025322359055280685
+Epoch [48/50], Loss: 0.01949467323720455
+Epoch [49/50], Loss: 0.022773098200559616
+Epoch [50/50], Loss: 0.001823487225919962
+Accuracy on the test set: 98.5%
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+Epoch [1/50], Loss: 0.6158584952354431
+Epoch [11/50], Loss: 0.021802624687552452
+Epoch [21/50], Loss: 0.06640477478504181
+Epoch [31/50], Loss: 0.001183257787488401
+Epoch [41/50], Loss: 0.043817076832056046
+Accuracy on the test set: 98.0%
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+Epoch [1/50], Loss: 0.6542579531669617
+Epoch [6/50], Loss: 0.0199209563434124
+Epoch [11/50], Loss: 0.02712712436914444
+Epoch [16/50], Loss: 0.04429348558187485
+Epoch [21/50], Loss: 0.00997350923717022
+Epoch [26/50], Loss: 0.029812734574079514
+Epoch [31/50], Loss: 0.002254038117825985
+Epoch [36/50], Loss: 0.02795606665313244
+Epoch [41/50], Loss: 0.00477906409651041
+Epoch [46/50], Loss: 0.00041997822700068355
+Accuracy on the test set: 99.25%
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+Epoch [1/50], Loss: 0.7081524133682251
+Epoch [5/50], Loss: 0.04637599736452103
+Epoch [9/50], Loss: 0.018905771896243095
+Epoch [13/50], Loss: 0.005938094574958086
+Epoch [17/50], Loss: 0.051892317831516266
+Epoch [21/50], Loss: 0.007578755728900433
+Epoch [25/50], Loss: 0.0016273203073069453
+Epoch [29/50], Loss: 0.0005599295836873353
+Epoch [33/50], Loss: 0.016461113467812538
+Epoch [37/50], Loss: 0.02073649875819683
+Epoch [41/50], Loss: 0.03722808137536049
+Epoch [45/50], Loss: 0.19947202503681183
+Epoch [49/50], Loss: 0.0007041222997941077
+Accuracy on the test set: 99.5%
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+Epoch [1/50], Loss: 1.1432151794433594
+Epoch [5/50], Loss: 0.424778550863266
+Epoch [9/50], Loss: 0.15931442379951477
+Epoch [13/50], Loss: 0.07751275599002838
+Epoch [17/50], Loss: 0.0729590654373169
+Epoch [21/50], Loss: 0.026640450581908226
+Epoch [25/50], Loss: 0.027256734669208527
+Epoch [29/50], Loss: 0.06364866346120834
+Epoch [33/50], Loss: 0.01086816843599081
+Epoch [37/50], Loss: 0.014782466925680637
+Epoch [41/50], Loss: 0.013351364061236382
+Epoch [45/50], Loss: 0.028768200427293777
+Epoch [49/50], Loss: 0.040534261614084244
+Accuracy on the test set: 98.5%
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+Epoch [1/30], Loss: 0.6892160773277283
+Epoch [3/30], Loss: 0.17988260090351105
+Epoch [5/30], Loss: 0.20035728812217712
+Epoch [7/30], Loss: 0.06904248893260956
+Epoch [9/30], Loss: 0.023629266768693924
+Epoch [11/30], Loss: 0.019998228177428246
+Epoch [13/30], Loss: 0.02025420218706131
+Epoch [15/30], Loss: 0.03667869791388512
+Epoch [17/30], Loss: 0.005571408197283745
+Epoch [19/30], Loss: 0.1259506344795227
+Epoch [21/30], Loss: 0.013312643393874168
+Epoch [23/30], Loss: 0.008125852793455124
+Epoch [25/30], Loss: 0.1384403109550476
+Epoch [27/30], Loss: 0.014341169036924839
+Epoch [29/30], Loss: 0.022745030000805855
+Accuracy on the test set: 99.0%
+
+(QMR) C:\Users\Administrator\Desktop\HUST-CV>C:/ProgramData/anaconda3/envs/QMR/python.exe c:/Users/Administrator/Desktop/HUST-CV/mlp/lab_qmr.py
+Epoch [1/30], Loss: 0.6334226131439209
+Epoch [3/30], Loss: 0.0815151259303093
+Epoch [5/30], Loss: 0.03710527345538139
+Epoch [7/30], Loss: 0.021677624434232712
+Epoch [9/30], Loss: 0.017231306061148643
+Epoch [11/30], Loss: 0.012687326408922672
+Epoch [13/30], Loss: 0.00769454101100564
+Epoch [15/30], Loss: 0.03158435598015785
+Epoch [17/30], Loss: 0.03828418254852295
+Epoch [19/30], Loss: 0.1308438628911972
+Epoch [21/30], Loss: 0.008844690397381783
+Epoch [23/30], Loss: 0.00391450384631753
+Epoch [25/30], Loss: 0.034330956637859344
+Epoch [27/30], Loss: 0.023307155817747116
+Epoch [29/30], Loss: 0.019259370863437653
+Accuracy on the test set: 99.25%
+

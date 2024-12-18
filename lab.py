@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
 
 # 1. 加载数据
-data = pd.read_csv("data.csv", header=None)
+data = pd.read_csv('dataset.csv', header=None)
 data.columns = ["data1", "data2", "label"]
 data = data.sample(frac=1).reset_index(drop=True)  # 随机打乱
 
@@ -50,7 +50,7 @@ model = NeuralNet()
 
 # 3. 定义损失函数和优化器
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+optimizer = optim.AdamW(model.parameters(), lr=0.001)
 
 # 4. 训练模型
 epochs = 50
