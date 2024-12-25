@@ -88,3 +88,7 @@ for i, ax in enumerate(axes.flat):
     ax.set_title(f'Predicted: {predicted[i].item()}')
     ax.axis('off')
 plt.show()  
+
+
+
+
