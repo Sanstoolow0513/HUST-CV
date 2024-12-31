@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "d436d5e88271ead3",
+        "id": "7d09f645c22e73c5",
         "type": "tabs",
         "children": [
           {
-            "id": "e4c1bbe3731bf32e",
+            "id": "67495da40383382b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机网络思维导图.md",
+                "file": "CV作业.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "计算机网络思维导图"
-            }
-          },
-          {
-            "id": "e3f3a4583f023b8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算机视觉实验二报告.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "计算机视觉实验二报告"
+              "title": "CV作业"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "计算机网络思维导图.md",
+                "file": "CV作业.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "计算机网络思维导图 的反向链接列表"
+              "title": "CV作业 的反向链接列表"
             }
           },
           {
@@ -154,13 +139,14 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机网络思维导图.md"
+                "file": "CV作业.md"
               },
               "icon": "lucide-list",
-              "title": "计算机网络思维导图 的大纲"
+              "title": "CV作业 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -177,13 +163,25 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e3f3a4583f023b8f",
+  "active": "67495da40383382b",
   "lastOpenFiles": [
+    "~WRL0003.tmp",
+    "~WRD0002.tmp",
+    "~WRL0001.tmp",
+    "~WRD0000.tmp",
+    "~$CV作业.docx",
+    "CV作业.docx",
+    "tex2pdf.-a1af6568f791c208/input.tex",
+    "tex2pdf.-a1af6568f791c208",
+    "tex2pdf.-fa1ce69c2624f380/input.tex",
+    "tex2pdf.-fa1ce69c2624f380",
+    "tex2pdf.-00a39c270fd23018/input.tex",
+    "未命名.canvas",
+    "CV作业.md",
     "计算机网络思维导图.md",
     "计算机视觉实验二报告.md",
     "计算机视觉实验一报告.md",
     "初始.md",
-    "欢迎.md",
-    "pytorch_intro"
+    "欢迎.md"
   ]
 }
