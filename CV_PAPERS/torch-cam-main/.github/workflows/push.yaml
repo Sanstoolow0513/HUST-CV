@@ -1,0 +1,41 @@
+name: push
+on:
+  push:
+    branches: main
+
+env:
+  PYTHON_VERSION: "3.11"
+  UV_VERSION: "0.5.13"
+
+jobs:
+  docs-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          architecture: x64
+      - uses: astral-sh/setup-uv@v5
+        with:
+          version: ${{ env.UV_VERSION }}
+      - name: Build documentation
+        run: |
+          make install-docs
+          make full-docs
+      - name: Documentation sanity check
+        run: test -e docs/build/index.html || exit
+      - name: Install SSH Client 🔑
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_DEPLOY_KEY }}
+      - name: Deploy to Github Pages
+        uses: JamesIves/github-pages-deploy-action@v4.7.2
+        with:
+          BRANCH: gh-pages
+          FOLDER: 'docs/build'
+          COMMIT_MESSAGE: '[skip ci] Documentation updates'
+          CLEAN: true
+          SSH: true

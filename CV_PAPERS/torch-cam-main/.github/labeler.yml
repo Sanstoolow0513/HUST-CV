@@ -1,0 +1,51 @@
+'module: methods':
+- changed-files:
+  - any-glob-to-any-file: torchcam/methods/*
+
+'module: metrics':
+- changed-files:
+  - any-glob-to-any-file: torchcam/metrics.py
+
+'module: utils':
+- changed-files:
+  - any-glob-to-any-file: torchcam/utils.py
+
+'ext: demo':
+- changed-files:
+  - any-glob-to-any-file: demo/*
+
+'ext: docs':
+- changed-files:
+  - any-glob-to-any-file: docs/*
+
+'ext: scripts':
+- changed-files:
+  - any-glob-to-any-file: scripts/*
+
+'ext: tests':
+- changed-files:
+  - any-glob-to-any-file: tests/*
+
+'topic: ci':
+- changed-files:
+  - any-glob-to-any-file: .github/*
+
+'topic: docs':
+- changed-files:
+  - any-glob-to-any-file:
+    - notebooks/*
+    - README.md
+    - CONTRIBUTING.md
+    - CODFE_OF_CONDUCT.md
+    - CITATION.cff
+    - LICENSE
+
+'topic: build':
+- changed-files:
+  - any-glob-to-any-file:
+    - setup.py
+    - pyproject.toml
+
+'topic: style':
+- changed-files:
+  - any-glob-to-any-file: .pre-commit-config.yaml

@@ -1,0 +1,35 @@
+default_language_version:
+    python: python3.11
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-ast
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+        exclude: .conda
+      - id: debug-statements
+        language_version: python3
+      - id: end-of-file-fixer
+      - id: no-commit-to-branch
+        args: ['--branch', 'main']
+      - id: requirements-txt-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: 'v3.6.0'
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: 'v0.8.4'
+    hooks:
+      - id: ruff
+        args:
+          - --fix
+      - id: ruff-format
